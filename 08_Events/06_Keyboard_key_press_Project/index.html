@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Keyboard</h1>
+    <section id="keyWindow">
+
+    </section>
+
+</body>
+
+<script>
+
+window.addEventListener('keyup',(event)=>{
+    document.querySelector('#keyWindow').innerHTML = `
+        <table>
+            <tr>
+                <th>Key</th>
+                <th>KeyCode</th>
+                <th>Code</th>
+            </tr>
+            <tr>
+                <td>${event.key == ' ' ? 'Space':event.key}</td>
+                <td>${event.keyCode}</td>
+                <td>${event.code}</td>               
+            </tr>
+        </table>
+    `;
+    
+})
+</script>
+</html>

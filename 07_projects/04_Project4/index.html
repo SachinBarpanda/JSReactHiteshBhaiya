@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --bg-color:lightblue;
+        }
+
+        body{
+            font-size: 20px;
+            background-color: #121212;
+            color: white;
+            font-family: monospace;
+            display: flex;
+            justify-content: space-around;
+        }
+
+
+
+        h1{
+            text-align: center;
+        }
+
+        #playerName{
+            width: 40%;
+            display: inline;
+        }
+
+        .container-inside{
+            width: fit-content;
+            margin: 0 auto;
+            border: 2px solid var(--bg-color);
+            padding: 15px;
+            box-shadow: 4px 4px 5px var(--bg-color),
+            -4px 4px 5px var(--bg-color),
+            4px -4px 5px var(--bg-color),
+            -4px -4px 5px var(--bg-color);
+        }
+
+        input{
+            display: block;
+            margin: 0.5rem 0;
+        }
+
+        input[type="text"]{
+            height: 6vh;
+            width: 80%;
+            margin: 1.5rem auto;
+            border: 3px solid var(--bg-color);
+            color: black;
+            font-weight: bolder;
+            font-size: 20px;
+        }
+
+        #subt{
+            margin: 1.5rem auto;
+            height: 5vh;
+            width: 80px;
+            font-size: 1rem;
+            background-color: darkcyan;
+            color: white;
+            font-size: 1.2rem;
+            font-family: monospace;
+        }
+
+        form{
+            text-align: center;
+        }
+        table,th,td{
+            border: 1px solid var(--bg-color);
+            border-collapse: collapse;
+            padding: 15px;
+        }
+    </style>
+
+</head>
+<body>
+    <section>
+
+        <h1>Guess the number</h1>
+        
+
+        <section class="container-inside">
+            
+            <label for="playerName" style="display: inline;">Your name</label>
+            <input type="text" id="playerName">
+            <p>Your best score : <span class="thisPlayerScore">10</span></p>
+            
+            <h3>Try guessing the number from 1 to 100.</h3>
+            <h3>You have 10 tries to acheive that.</h3>
+
+            <form class="form">
+                <label for="textField">What is the number you just guessed?</label>
+                <input type="text" id="textField" class="getValue">
+                <input type="submit" value="Guess" id="subt">
+            </form>
+
+            <section id="result">
+                <p>Previous Guess: <span class="guesses"></span></p>
+                <p>Guess Remaining: <span class="remainingGuess">10</span></p>
+                <p class="lowOrHigh"></p>
+            </section>
+            
+        </section>
+
+    </section>
+    <section class="World-Records">
+
+        <section class="container-inside">
+
+            
+            <table class="recordList">
+                <tr>
+                    <th>Name of record holder</th>
+                    <th>Record</th>
+                </tr>
+                
+            </table>
+        </section>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>

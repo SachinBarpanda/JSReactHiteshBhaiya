@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div >
+        <h1 id="title" class="heading">DOM <span style="display: none;">deeeper </span>learning</h1>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <input type="password" name="something" id="somethingElse">
+
+    <ul>
+        <li class="listItem" >one</li>
+        <li class="listItem">two</li>
+        <li class="listItem">three</li>
+    </ul>
+
+    <script>
+//         title.style.borderRadius = "20px";
+// '20px'
+// title.style.padding = '15px'
+// '15px'
+// title.style.backgroundColor = 'lightblue'
+// 'lightblue'
+
+// title.innerHTML
+// 'DOM learning'
+//     title.innerContent
+// undefined
+//     title.textContent
+// 'DOM learning'
+//     title.innerHTML
+// 'DOM learning'
+
+
+// title.innerText
+// 'DOM learning'
+//     title.textContent
+// 'DOM deeeper learning'
+// title.innerHTML
+// 'DOM <span style="display: none;">deeeper </span>learning'
+
+// document.querySelector('h2');
+// <h2>​Lorem ipsum dolor sit amet.​</h2>​
+// document.querySelector('#title');
+// <h1 id=​"title" class=​"heading">​…​</h1>​"DOM "<span style=​"display:​ none;​">​deeeper ​</span>​"learning"</h1>​
+// document.querySelector('.heading');
+// <h1 id=​"title" class=​"heading">​…​</h1>​"DOM "<span style=​"display:​ none;​">​deeeper ​</span>​"learning"</h1>​
+
+
+// document.querySelector('input[type="password"]')
+// <input type=​"password" name=​"something" id=​"somethingElse">​
+// document.querySelector('p:first-child')
+// null
+
+
+// document.querySelector('ul');
+// <ul>​…​</ul>​
+// const myul = document.querySelector('ul');
+// undefined
+// myul.q
+// undefined
+// myul.querySelector('li')
+// <li>​…​</li>​::marker​"one"</li>​
+// const turnGreen = myul.querySelector('li')
+// undefined
+// turnGreen.style.backgroundColor = "green"
+// 'green'
+// turnGreen.style.padding = "10px";
+// '10px'
+
+
+// document.querySelectorAll('li')
+// NodeList(3) [li, li, li]0: li1: li2: lilength: 3[[Prototype]]: NodeList
+// const tempLiList = document.querySelectorAll('li')
+// undefined
+
+// tempLiList[0].style.color = 'green'
+// 'green'
+
+
+// const tempLiList = document.querySelectorAll('li')
+// undefined
+// tempLiList.forEach( function (l) {
+//     l.style.backgroundColor = "lightblue";
+// } )
+// undefined
+// tempLiList.forEach( function (l) {
+//     l.style.backgroundColor = "blue";})
+
+// let tempClassList = document.getElementsByClassName('listItem');
+// undefined
+// Array.from(tempClassList)
+// (3) [li.listItem, li.listItem, li.listItem]0: li.listItem1: li.listItem2: li.listItemlength: 
+// myConvertedArray = Array.from(tempClassList)
+// (3) [li.listItem, li.listItem, li.listItem]
+// myConvertedArray.forEach(function (li){
+//     li.style.color = 'orange'
+// }
+// VM3140:3 Uncaught SyntaxError: missing ) after argument list
+// myConvertedArray.forEach(function (li){
+//     li.style.color = 'orange'
+// })
+
+/**Wikipedia wale */
+
+// document.querySelectorAll('h2')
+// NodeList(15) [h2.vector-pinnable-header-label, h2, h2, h2, h2, h2, h2, h2, h2, h2, h2, h2, h2, h2, h2]
+// const allSelectedh2 = document.querySelectorAll('h2')
+// undefined
+// allSelectedh2.forEach( function (li){
+//     li.style.color = 'red'
+// })
+// undefined
+// const allSelectedh2 = document.querySelectorAll('h3')
+// undefined
+// allSelectedh2.forEach( function (li){
+//     li.style.color = 'red'
+// })
+// undefined
+// allSelectedh2.forEach( function (li){
+//     li.style.color = 'red';
+// })
+// undefined
+// allSelectedh2.forEach( function (li){
+//     li.style.color = 'red';
+//     li.innerText = "Sachin";
+// })
+
+    </script>
+</body>
+</html>
